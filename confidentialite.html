@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Confidentialité · Family OS</title>
+  <meta name="description" content="Politique de confidentialité de Family OS : local-first, sans serveur éditeur, synchronisation chiffrée de bout en bout via votre propre cloud." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="mark" aria-hidden="true"></div>
+    <div class="name">Family OS</div>
+  </header>
+
+  <main class="wrap">
+    <a class="back" href="index.html">← Accueil</a>
+    <h1>Politique de confidentialité</h1>
+    <p class="updated">Éditeur : ÉCLAT SACRE, SAS (SIREN 992 097 642) · contact@eclat-sacre.fr · Dernière mise à jour : 5 octobre 2026</p>
+
+    <h2>En bref</h2>
+    <p>Family OS est <strong>local-first</strong> et <strong>sans serveur éditeur</strong>. Nous (Éclat Sacré, l'éditeur) <strong>ne collectons, ne recevons et ne stockons aucune de vos données</strong>. Tout ce que vous saisissez reste <strong>chiffré sur votre appareil</strong>. Si vous activez la synchronisation, vos données circulent <strong>chiffrées de bout en bout</strong> via <strong>votre propre espace cloud</strong>, jamais par nous. Ni compte éditeur, ni publicité, ni traceur, ni revente de données.</p>
+
+    <h2>1. Données que nous ne collectons pas</h2>
+    <p>Nous ne collectons, ne transmettons et ne stockons sur aucun serveur : votre nom, vos proches, vos tâches/événements/listes, vos repas, vos dépenses, vos dates, votre localisation, ni aucun identifiant publicitaire. L'application <strong>ne contient aucun SDK d'analytics ni de publicité</strong> et <strong>n'effectue aucun appel réseau vers l'éditeur</strong>.</p>
+
+    <h2>2. Données stockées sur votre appareil</h2>
+    <p>Vos contenus sont enregistrés <strong>localement</strong>, dans une base <strong>chiffrée</strong> (SQLCipher). La clé de chiffrement est générée sur l'appareil et conservée dans le stockage sécurisé du système (Keychain iOS / Keystore Android). Elle ne nous est jamais transmise.</p>
+
+    <h2>3. Synchronisation entre vos deux téléphones (optionnelle)</h2>
+    <p>Le partage est <strong>à votre initiative</strong>. Deux possibilités :</p>
+    <ul>
+      <li><strong>Par invitation / fichier</strong> : l'application produit un <strong>fichier chiffré</strong> que <strong>vous</strong> envoyez par le moyen de votre choix, déverrouillé par une <strong>phrase secrète</strong> communiquée séparément.</li>
+      <li><strong>Synchronisation automatique</strong> : vous vous connectez à <strong>un espace cloud que vous possédez et contrôlez</strong> — <strong>Google Drive, Dropbox ou OneDrive</strong> — ou vous choisissez un dossier partagé. L'application y dépose vos changements sous forme de <strong>blocs chiffrés de bout en bout</strong> (clé dérivée d'une phrase secrète connue de vous seuls). Le <strong>fournisseur cloud ne voit que des données chiffrées, illisibles</strong> pour lui, et <strong>nous n'en recevons jamais copie</strong>. Vous pouvez à tout moment <strong>vous déconnecter</strong> dans l'application et <strong>supprimer les fichiers</strong> dans votre cloud.</li>
+    </ul>
+
+    <h2>4. Utilisation des données Google (Google Drive)</h2>
+    <p>Lorsque vous choisissez de vous connecter à <strong>Google Drive</strong>, Family OS demande uniquement le périmètre <strong><code>drive.file</code></strong> : l'accès est <strong>limité aux fichiers que l'application crée elle-même</strong> (le dossier de synchronisation), jamais au reste de votre Drive.</p>
+    <p>L'usage et le transfert par Family OS des informations reçues des <strong>API Google</strong> respectent la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, y compris ses exigences d'<strong>Usage limité (Limited Use)</strong>. Concrètement : ces données servent <strong>uniquement</strong> à synchroniser votre organisation entre vos appareils ; elles <strong>ne sont ni vendues, ni transférées à des tiers</strong>, ne servent <strong>à aucune publicité</strong>, et <strong>ne sont jamais consultées par l'éditeur</strong> (elles restent chiffrées dans votre propre Drive). Le même principe s'applique à Dropbox et OneDrive.</p>
+
+    <h2>5. Validation des achats (RevenueCat)</h2>
+    <p>Pour débloquer votre achat (annuel / à vie) sur <strong>vos deux téléphones</strong>, Family OS utilise le sous-traitant <strong>RevenueCat</strong>. Lui sont transmis un <strong>identifiant d'application anonyme</strong> et le <strong>reçu d'achat</strong> fourni par Apple/Google — <strong>jamais votre nom, ni le contenu de l'application</strong>. Les paiements eux-mêmes sont traités par <strong>Apple (App Store)</strong> / <strong>Google (Play Store)</strong> selon leurs propres politiques.</p>
+
+    <h2>6. Notifications</h2>
+    <p>Les rappels sont des <strong>notifications locales</strong> planifiées sur votre appareil, uniquement si vous activez cette option. Aucune notification n'est envoyée depuis un serveur.</p>
+
+    <h2>7. Vos droits (RGPD)</h2>
+    <p>Comme l'éditeur ne détient aucune de vos données, il n'y a <strong>rien à exporter ou supprimer côté serveur</strong>. Vous gardez le contrôle total : l'écran <strong>Confidentialité</strong> de l'application permet d'exporter une sauvegarde chiffrée et d'<strong>effacer définitivement</strong> toutes les données locales. Pour toute question ou pour exercer vos droits : <a href="mailto:contact@eclat-sacre.fr">contact@eclat-sacre.fr</a>.</p>
+
+    <h2>8. Enfants</h2>
+    <p>L'application peut enregistrer des informations sur des enfants <strong>saisies par un adulte</strong> (prénom, événements). Ces informations restent, comme le reste, <strong>chiffrées et locales</strong>. L'application ne s'adresse pas directement aux enfants et ne collecte rien en ligne.</p>
+
+    <h2>9. Modifications</h2>
+    <p>Toute évolution de cette politique sera publiée sur cette page avec une nouvelle date et, le cas échéant, le périmètre exact des accès demandés.</p>
+
+    <h2>10. Contact</h2>
+    <p><strong>ÉCLAT SACRE, SAS</strong> — <a href="mailto:contact@eclat-sacre.fr">contact@eclat-sacre.fr</a>. Mentions légales, coordonnées et médiation de la consommation : <a href="https://www.eclat-sacre.fr" target="_blank" rel="noopener">eclat-sacre.fr</a>.</p>
+
+    <hr class="langsep" />
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Publisher: ÉCLAT SACRE, SAS (SIREN 992 097 642) · contact@eclat-sacre.fr · Last updated: 5 October 2026</p>
+
+    <h2>In short</h2>
+    <p>Family OS is <strong>local-first</strong> with <strong>no publisher server</strong>. We (Éclat Sacré) <strong>collect, receive and store none of your data</strong>. Everything you enter stays <strong>encrypted on your device</strong>. If you enable sync, your data travels <strong>end-to-end encrypted</strong> through <strong>your own cloud space</strong>, never through us. No publisher account, no ads, no trackers, no data selling.</p>
+
+    <h2>1. What we don't collect</h2>
+    <p>No names, relatives, tasks/events/lists, meals, expenses, dates, location or ad IDs are transmitted or stored on any server. The app has <strong>no analytics or ad SDK</strong> and makes <strong>no network calls to the publisher</strong>.</p>
+
+    <h2>2. On-device storage</h2>
+    <p>Content is stored locally in an <strong>encrypted</strong> database (SQLCipher); the key is generated on-device and kept in the system secure store (iOS Keychain / Android Keystore). It is never sent to us.</p>
+
+    <h2>3. Sync between your two phones (optional)</h2>
+    <p>Sharing is <strong>your choice</strong>: by a <strong>passphrase-protected encrypted invitation file</strong> you send yourself, or by <strong>automatic sync</strong> through a <strong>cloud space you own and control — Google Drive, Dropbox or OneDrive —</strong> or a shared folder. Data is written there as <strong>end-to-end encrypted blocks</strong> (key derived from a secret phrase only you know). The <strong>cloud provider only ever sees encrypted, unreadable data</strong>, and <strong>we never receive a copy</strong>. You can disconnect and delete the files anytime.</p>
+
+    <h2>4. Use of Google user data (Google Drive)</h2>
+    <p>When you connect Google Drive, Family OS requests only the <strong><code>drive.file</code></strong> scope — access <strong>limited to the files the app itself creates</strong> (the sync folder), never the rest of your Drive. Family OS's use and transfer of information received from <strong>Google APIs</strong> adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including its <strong>Limited Use</strong> requirements: this data is used <strong>only</strong> to sync your plan between your devices, is <strong>never sold or transferred to third parties</strong>, is <strong>never used for advertising</strong>, and is <strong>never read by the publisher</strong> (it stays encrypted in your own Drive). The same applies to Dropbox and OneDrive.</p>
+
+    <h2>5. Purchase validation (RevenueCat)</h2>
+    <p>To unlock your purchase on <strong>both phones</strong>, Family OS uses the processor <strong>RevenueCat</strong>, which receives an <strong>anonymous app identifier</strong> and the <strong>purchase receipt</strong> from Apple/Google — <strong>never your name or app content</strong>. Payments are handled by <strong>Apple/Google</strong> under their own policies.</p>
+
+    <h2>6. Notifications</h2>
+    <p>Local only, scheduled on-device, only if you enable them. Nothing is sent from a server.</p>
+
+    <h2>7. Your rights (GDPR)</h2>
+    <p>The publisher holds none of your data, so there is nothing to export or delete server-side. In-app you can export an encrypted backup and permanently erase all local data. Contact: <a href="mailto:contact@eclat-sacre.fr">contact@eclat-sacre.fr</a>.</p>
+
+    <h2>8. Children</h2>
+    <p>Child information is entered by an adult and stays encrypted and local; the app does not target children or collect anything online.</p>
+
+    <h2>9. Changes</h2>
+    <p>Any update is published on this page with a new date.</p>
+
+    <h2>10. Contact</h2>
+    <p>ÉCLAT SACRE, SAS — <a href="mailto:contact@eclat-sacre.fr">contact@eclat-sacre.fr</a> · legal notice &amp; mediation: <a href="https://www.eclat-sacre.fr" target="_blank" rel="noopener">eclat-sacre.fr</a>.</p>
+
+    <footer class="site">
+      <span>© 2026 Éclat Sacré</span>
+      <a href="index.html">Accueil / Home</a>
+    </footer>
+  </main>
+</body>
+</html>
